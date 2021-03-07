@@ -1,10 +1,18 @@
 # ldutils
 
-_TBC_
+This project is a repository for small utility pieces that I keep re-using. Initially cloned across from the "sandbox" project, but will grow as more common pieces show up.
 
 ## Usage
 
-_TBC_
+This is a simple JAR based library, just include the dependency and read the javadoc:
+
+```xml
+<dependency>
+  <groupId>net.parttimepolymath</groupId>
+  <artifactId>ldutils</artifactId>
+  <version>1.0-20210307.141104</version>
+</dependency>
+```
 
 ## Prerequisites
 This was built with Java 12.0.2 and Maven 3.6.3.
@@ -13,8 +21,20 @@ It is assumed that Maven is in your execution path.
 
 ## Test and Build
 
-_TBC_
+To locally build and test:
 
+```shell
+$ mvn clean package
+.
+.
+.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.456 s
+[INFO] Finished at: 2021-03-07T14:15:41Z
+[INFO] ------------------------------------------------------------------------
+```
 
 ## License
 Copyright 2021 Little Dog Digital

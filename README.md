@@ -10,12 +10,12 @@ This is a simple JAR based library, just include the dependency and read the jav
 <dependency>
   <groupId>net.parttimepolymath</groupId>
   <artifactId>ldutils</artifactId>
-  <version>1.0-20210307.141104</version>
+  <version>1.1-20250831.161459</version>
 </dependency>
 ```
 
 ## Prerequisites
-This was built with Java 22.0.1 and Maven 3.9.11.
+This was built with Java 21 and Maven 3.9.
 
 It is assumed that Maven is in your execution path.
 

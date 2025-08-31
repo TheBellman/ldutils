@@ -15,7 +15,7 @@ This is a simple JAR based library, just include the dependency and read the jav
 ```
 
 ## Prerequisites
-This was built with Java 12.0.2 and Maven 3.6.3.
+This was built with Java 22.0.1 and Maven 3.9.11.
 
 It is assumed that Maven is in your execution path.
 
@@ -37,7 +37,7 @@ $ mvn clean package
 ```
 
 ## License
-Copyright 2021 Little Dog Digital
+Copyright 2025 Little Dog Digital
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 

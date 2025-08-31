@@ -5,28 +5,28 @@
     <name>LDUtils</name>
     <groupId>net.parttimepolymath</groupId>
     <artifactId>ldutils</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <description>Simple library to contain various utilities.</description>
-    <url>http://parttimepolymath.net</url>
+    <url>https://parttimepolymath.net</url>
 
     <scm>
         <url>scm:ssh://git-codecommit.eu-west-2.amazonaws.com/v1/repos/ldutils</url>
         <connection>scm:ssh://git-codecommit.eu-west-2.amazonaws.com/v1/repos/ldutils</connection>
         <developerConnection>scm:ssh://git-codecommit.eu-west-2.amazonaws.com/v1/repos/ldutils</developerConnection>
-        <tag>ldutils-1.0-snapshot</tag>
+        <tag>ldutils-1.1-snapshot</tag>
     </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <lombok.version>1.18.18</lombok.version>
-        <jackson.version>2.12.0</jackson.version>
-        <junit.version>5.7.1</junit.version>
-        <lang.version>3.11</lang.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <lombok.version>1.18.38</lombok.version>
+        <jackson.version>2.20.0</jackson.version>
+        <junit.version>5.13.4</junit.version>
+        <lang.version>3.18.0</lang.version>
     </properties>
 
     <distributionManagement>
@@ -76,7 +76,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M4</version>
+                <version>3.5.3</version>
                 <configuration>
                     <skipTests>false</skipTests>
                     <testFailureIgnore>false</testFailureIgnore>
@@ -88,7 +88,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.14.0</version>
                 <configuration>
                     <annotationProcessorPaths>
                         <path>
@@ -103,7 +103,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.11.3</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -117,7 +117,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0-M3</version>
+                <version>3.6.1</version>
                 <executions>
                     <execution>
                         <id>enforce-maven</id>
@@ -127,7 +127,7 @@
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>3.6.3</version>
+                                    <version>3.9.11</version>
                                 </requireMavenVersion>
                             </rules>
                         </configuration>

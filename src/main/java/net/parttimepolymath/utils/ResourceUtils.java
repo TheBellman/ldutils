@@ -16,9 +16,17 @@ import java.util.stream.Collectors;
  * Utility class for dealing with resource files from the JAR or from code base during tests.
  *
  * @author Robert Hook
- * @since 2020-16-05
+ * @since 2025-10-19
  */
 public final class ResourceUtils {
+    /**
+     * Default constructor, used to ensure there's an explicit constructor.
+     * @throws UnsupportedOperationException when called
+     */
+    public ResourceUtils() {
+        throw new UnsupportedOperationException("ResourceUtils cannot be instantiated");
+    }
+
     /**
      * load a set of Properties from a nominated file in the JAR or code base.
      *

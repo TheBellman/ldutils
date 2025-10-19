@@ -15,9 +15,17 @@ import java.util.stream.Collectors;
  * Convenience wrappers for dealing with files.
  *
  * @author Robert Hook
- * @since 2020-05-22
+ * @since 2025-10-19
  */
 public class FileUtils {
+
+    /**
+     * Default constructor, used to ensure there's an explicit constructor.
+     * @throws UnsupportedOperationException when called
+     */
+    public FileUtils() {
+        throw new UnsupportedOperationException("FileUtils cannot be instantiated");
+    }
 
     /**
      * does a file specified by a filename - which can be a path to a file - appear to be readable?

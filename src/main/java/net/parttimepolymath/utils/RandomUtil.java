@@ -9,9 +9,18 @@ import java.util.concurrent.ThreadLocalRandom;
  * into various application or business contexts, making the use of the random integer a bit more readable.
  *
  * @author Robert Hook
- * @since 2020-05-16
+ * @since 2025-10-19
  */
 public final class RandomUtil {
+
+    /**
+     * Default constructor, used to ensure there's an explicit constructor.
+     * @throws UnsupportedOperationException when called
+     */
+    public RandomUtil() {
+        throw new UnsupportedOperationException("RandomUtil cannot be instantiated");
+    }
+
     /**
      * given a collection like a list that has "size" elements, return a random between 0 and size-1
      *

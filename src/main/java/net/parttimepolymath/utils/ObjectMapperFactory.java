@@ -1,9 +1,7 @@
 package net.parttimepolymath.utils;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import net.jcip.annotations.ThreadSafe;
+import tools.jackson.databind.ObjectMapper;
 
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -12,30 +10,31 @@ import java.util.concurrent.atomic.AtomicReference;
  * it's definitely convenient to have a convenient way of getting it for tests.
  *
  * @author Robert Hook
- * @since 2020-05-16
+ * @since 2025-10-19
  */
 @ThreadSafe
 public final class ObjectMapperFactory {
     private static AtomicReference<ObjectMapper> instance = new AtomicReference<>();
 
     /**
+     * Default constructor, used to ensure there's an explicit constructor.
+     * @throws UnsupportedOperationException when called
+     */
+    public ObjectMapperFactory() {
+        throw new UnsupportedOperationException("ObjectMapperFactory cannot be instantiated");
+    }
+
+    /**
      * get the existing object mapper or make a new one. This is thread safe, but does
      * have the side effect that in a race condition more than one mapper might get created
      * and then discarded.
-     *
-     * note also the use of findAndRegisterModules() to allow us to deal with Instant/ISO8601 conversion
      *
      * @return a non-null object mapper.
      */
     public static ObjectMapper getObjectMapper() {
         ObjectMapper mapper = instance.get();
         if (mapper == null) {
-            mapper = new ObjectMapper()
-                            .findAndRegisterModules()
-                            .disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
-                            .disable(SerializationFeature.INDENT_OUTPUT)
-                            .setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
-
+            mapper = new ObjectMapper();
             instance.compareAndSet(null, mapper);
         }
         return instance.get();

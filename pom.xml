@@ -29,13 +29,13 @@
         <lang.version>3.19.0</lang.version>
     </properties>
 
-    <distributionManagement>
-        <repository>
-            <id>development--maven</id>
-            <name>development--maven</name>
-            <url>https://development-889199313043.d.codeartifact.eu-west-1.amazonaws.com/maven/maven/</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>development&#45;&#45;maven</id>-->
+<!--            <name>development&#45;&#45;maven</name>-->
+<!--            <url>https://development-889199313043.d.codeartifact.eu-west-1.amazonaws.com/maven/maven/</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 
     <dependencies>
         <dependency>

@@ -5,17 +5,17 @@
     <name>LDUtils</name>
     <groupId>net.parttimepolymath</groupId>
     <artifactId>ldutils</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <description>Simple library to contain various utilities.</description>
     <url>https://parttimepolymath.net</url>
 
     <scm>
-        <url>scm:ssh://git-codecommit.eu-west-2.amazonaws.com/v1/repos/ldutils</url>
-        <connection>scm:ssh://git-codecommit.eu-west-2.amazonaws.com/v1/repos/ldutils</connection>
-        <developerConnection>scm:ssh://git-codecommit.eu-west-2.amazonaws.com/v1/repos/ldutils</developerConnection>
-        <tag>ldutils-1.2-snapshot</tag>
+        <url>scm:git:https://github.com/TheBellman/ldutils</url>
+        <connection>scm:git:git@github.com:TheBellman/ldutils.git</connection>
+        <developerConnection>scm:git:git@github.com:TheBellman/ldutils.git</developerConnection>
+        <tag>ldutils-1.3-snapshot</tag>
     </scm>
 
     <properties>
